@@ -25,7 +25,7 @@ This edid has been hacked so that the Kernel won't take notice of the 'non-deskt
 The above line assumes you are using the secondary hdmi port on the Rpi4b.
 
 
-4.  Reboot
+4.  Reboot  
 When you return you might not get a good login screen at least I don't. I can't see a field to put user name.
 
 5.  go to tty3, start up riftDriverPi  

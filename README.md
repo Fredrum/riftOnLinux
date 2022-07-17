@@ -14,7 +14,7 @@ Current Steps:
 1.  Copy the file 83-hmd.rules to  
 `/etc/udev/rules.d/`
 
-2.  Copy modded the modded edid from this repo modified_rift_edid_01.bin to  
+2.  Copy the modded edid from this repo modified_rift_edid_01.bin to  
 `/lib/firmware`
 
 This edid has been hacked so that the Kernel won't take notice of the 'non-desktop' attribute which is hindering the display to get recognized and take signal. You can compare with the un-modified edid to see how that was done. I got some help doing the edid hack as I didn't know how to find and change the right data.

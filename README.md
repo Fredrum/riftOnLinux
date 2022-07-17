@@ -17,7 +17,7 @@ Current Steps:
 2.  Copy the modded edid from this repo modified_rift_edid_01.bin to  
 `/lib/firmware`
 
-This edid has been hacked so that the Kernel won't take notice of the 'non-desktop' attribute which is hindering the display from getting recognized and take signal. You can compare with the un-modified edid to see how that was done. I got some help doing the edid hack as I didn't know how to find and change the right data.
+This edid has been hacked so that the Kernel won't take notice of the 'non-desktop' attribute which is hindering the display from getting recognized and take signal. You can compare with the un-modified edid to see how that was done. I got some help doing the edid hack as I didn't know how to find and change the right data. (the hack doesn't actually change the attrib value it changes the display model id)
 
 
 3.  Edit cmdline.txt to have this before 'rootwait'  

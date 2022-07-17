@@ -28,12 +28,14 @@ The above line assumes you are using the secondary hdmi port on the Rpi4b.
 4.  Reboot
 When you return you might not get a good login screen at least I don't. I can't see a field to put user name.
 
-5.  go to tty3, start up riftDriverPi
+5.  go to tty3, start up riftDriverPi  
+6.  https://github.com/OhioIon/riftDriverPi  
 (Don't press any keys after you started this, other than to switch tty)
 
 This is currently needed to wakeup the Rift and keeping it alive. The orange light in the headset should go white and you should see the tty sceen in the Rift. So far I haven't found another way to get the Rift screen alive.
 
 6.  go to tty2, run kms-vulkan  
+https://github.com/nyorain/kms-vulkan  
 I'm currently hacking in a line in device.c just after  
 `for (int i = 0; i < ret->res->count_connectors; i++) {`  
 to skip past the first out device (my monitor) bu doing  

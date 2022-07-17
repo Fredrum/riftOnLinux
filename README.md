@@ -21,7 +21,7 @@ This edid has been hacked so that the Kernel won't take notice of the 'non-deskt
 
 
 3.  Edit cmdline.txt to have this before 'rootwait'  
-video=HDMI-A-2:2160x1200M@90e drm.edid_firmware=HDMI-A-2:modified_rift_edid_01.bin
+`video=HDMI-A-2:2160x1200M@90e drm.edid_firmware=HDMI-A-2:modified_rift_edid_01.bin`  
 The above line assumes you are using the secondary hdmi port on the Rpi4b.
 
 
@@ -35,9 +35,9 @@ This is currently needed to wakeup the Rift and keeping it alive. The ornage lig
 
 6.  go to tty2, run kms-vulkan  
 I'm currently hacking in a line in device.c just after  
-`for (int i = 0; i < ret->res->count_connectors; i++) {`
+`for (int i = 0; i < ret->res->count_connectors; i++) {`  
 to skip past the first out device (my monitor) bu doing  
-`if(i==0) continue;`
+`if(i==0) continue;`  
 
 For me this program currently fails setting up for Vulkan rendering but falls back to OpenGL.
 
@@ -45,7 +45,7 @@ For me this program currently fails setting up for Vulkan rendering but falls ba
 
 Notes:
 - Look for Rift display mode to be present in return of  
-`modetest -c`
+`modetest -c`  
 
 
 ToDo:

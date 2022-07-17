@@ -53,4 +53,5 @@ Notes:
 ToDo:
 - Figure out how to get the display modes to allow Desktop to co-exist.
 - Get kms-vulkan to actually use Vulkan and not OpenGL.
-- Get a stereo/multiview example using Vulkan working on Raspberry Pi4b.
+- Get a stereo/multiview example using Vulkan working on Raspberry Pi4b.  
+Actually this is working now see:  https://gitlab.freedesktop.org/mesa/mesa/-/issues/6882  

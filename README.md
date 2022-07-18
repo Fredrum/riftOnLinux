@@ -32,13 +32,13 @@ When you return you might not get a good login screen at least I don't. I can't 
 https://github.com/OhioIon/riftDriverPi  
 (Don't press any keys after you started this, other than to switch tty)
 
-This is currently needed to wakeup the Rift and keeping it alive. The orange light in the headset should go white and you should see the tty sceen in the Rift. So far I haven't found another way to get the Rift screen alive.
+This is currently needed to wakeup the Rift and keeping it alive. The orange light in the headset should go white and you should see the tty screen in the Rift. So far I haven't found another way to get the Rift screen alive.
 
 6.  go to tty2, run kms-vulkan  
 https://github.com/nyorain/kms-vulkan  
 I'm currently hacking in a line in device.c just after  
 `for (int i = 0; i < ret->res->count_connectors; i++) {`  
-to skip past the first out device (my monitor) bu doing  
+to skip past the first out device (my monitor) by doing  
 `if(i==0) continue;`  
 
 For me this program currently fails setting up for Vulkan rendering but falls back to OpenGL.
@@ -55,3 +55,4 @@ ToDo:
 - Get kms-vulkan to actually use Vulkan and not OpenGL.
 - Get a stereo/multiview example using Vulkan working on Raspberry Pi4b.  
 Actually this is working now see:  https://gitlab.freedesktop.org/mesa/mesa/-/issues/6882  
+but running disappointingly slow even when pointing the camera to empty space.

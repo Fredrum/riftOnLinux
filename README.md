@@ -19,7 +19,7 @@ Current Steps:
 
 This edid has been hacked so that the Kernel won't take notice of the 'non-desktop' attribute which is hindering the display from getting recognized and take signal. You can compare with the un-modified edid to see how that was done. I got some help doing the edid hack as I didn't know how to find and change the right data. (the hack doesn't actually change the attrib value it changes the display model id)  
   
-Read more here about how the Linux kernel handles the attribute,  
+Read more here about how the Linux kernel handles the attribute, look for 'EDID_QUIRK_NON_DESKTOP'  
 https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/drm_edid.c  
 
 

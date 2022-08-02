@@ -54,7 +54,7 @@ Notes:
 
 
 ToDo:
-- Figure out how to get the display modes to allow Desktop to co-exist.
+- Figure out how to get the display modes to allow Desktop to co-exist.  
 I did find a way but it then does not work from tty. See wiki page.  
 - Find a easy to follow Vulkan kmsdrm/direct render example.
 - Get a stereo/multiview example using Vulkan working on Raspberry Pi4b.  

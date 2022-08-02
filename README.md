@@ -55,7 +55,8 @@ Notes:
 
 ToDo:
 - Figure out how to get the display modes to allow Desktop to co-exist.
-- Get kms-vulkan to actually use Vulkan and not OpenGL.
+I did find a way but it then does not work from tty. See wiki page.  
+- Find a easy to follow Vulkan kmsdrm/direct render example.
 - Get a stereo/multiview example using Vulkan working on Raspberry Pi4b.  
 Actually this is working now see:  https://gitlab.freedesktop.org/mesa/mesa/-/issues/6882  
 but running disappointingly slow even when pointing the camera to empty space.
